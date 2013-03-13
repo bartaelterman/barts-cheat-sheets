@@ -43,4 +43,4 @@
 |`ESC-!`|Attempt command completion|
 |`ESC-TAB`|Attempt completion from previous commands in the history list|
 
-Thanks to (List of default Mac OS X command-line editing bash keyboard shortcuts](http://maymay.net/blog/2007/07/18/list-of-default-mac-os-x-command-line-editing-bash-keyboard-shortcuts/).
+Thanks to [List of default Mac OS X command-line editing bash keyboard shortcuts](http://maymay.net/blog/2007/07/18/list-of-default-mac-os-x-command-line-editing-bash-keyboard-shortcuts/).
