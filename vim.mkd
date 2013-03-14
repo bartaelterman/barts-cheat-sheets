@@ -1,0 +1,49 @@
+# Vim cheat sheet
+
+## Moving around
+
+|command|description|
+|-------|-----------|
+|`h`|*count* characters to the left|
+|`l`|*count* characters to the right|
+|`j`|*count* lines down|
+|`k`|*count* lines up|
+|`0`|move to the beginning of the line|
+|`^`|move to the first non-blank character of the line|
+|`$`|move to the end of the line and *count* lines downward|
+|`g0`|when a line wraps on the screen, move to the beginning the screen instead of the beginning of the line|
+|`g^`|when a line wraps on the screen, move to the first non-blank character of the screen line|
+|`g$`|when a line wraps on the screen, move to the end of the screen line instead of the end of the line|
+|`f{char}`|move to the *count*'th occurrence of *char* to the right|
+|`F{char}`|move to the *count*'th occurrence of *char* to the left|
+|`t{char}`|move to the *count*'th occurrence of *char* to the right, place the cursor before this character|
+|`T{char}`|move to the *count*'th occurrence of *char* to the left, place the cursor after this character|
+|`;`|repeat last f, t, F or T action *count* times|
+|`,`|repeat last f, t, F or T action *count* times in the opposite direction|
+|`w`|*count* words forward|
+|`b`|*count* words backwards|
+|`(`|*count* sentences backward|
+|`)`|*count* sentences forward|
+|`{`|*count* paragraphs backward|
+|`}`|*count* paragraphs forward|
+
+## Folding
+
+|command|description|
+|-------|-----------|
+|`zf#j`|create a fold from the cursor down # lines|
+|`zf/string`|create a fold from the cursor to *string*|
+|`zj`|move the cursor to the next fold|
+|`zk`|move the cursor to the previous fold|
+|`zo`|open a fold at the cursor|
+|`zO`|open all folds at the cursor|
+|`zm`|increase the foldlevel by one|
+|`zM`|close all open folds|
+|`zr`|decrease the fold level by one|
+|`zR`|decrease the fold level to zero: open all folds|
+|`zD`|delete the fold at the cursor|
+|`zE`|delete all folds|
+|`[z`|move to start of open fold|
+|`]z`|move to end of open fold|
+
+Thanks to [Vim tips: Folding fun](http://www.linux.com/learn/tutorials/442438-vim-tips-folding-fun)
