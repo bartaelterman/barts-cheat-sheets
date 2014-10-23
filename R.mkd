@@ -1,0 +1,35 @@
+# Clustering
+
+First create a random dataset
+
+        x <- rnorm(99, mean=rep(1:3, each=33), sd=0.4)
+        y <- rnorm(99, mean=rep(c(1,2,1), each=33), sd=0.4)
+        df <- data.frame(x=x, y=y)
+
+## Hierarchical clustering
+
+Calculate the distances
+
+        distxy <- dist(df)
+
+Cluster
+
+        hc <- hclust(distxy)
+
+Plot the dendogram
+
+        plot(hc)
+
+## k-means clustering
+
+Cluster
+
+        km <- kmeans(df, centers=3)
+
+Plot the data, color them by cluster, and use a symbol per expected cluster
+
+        plot(x,y, col=km$cluster, pch=rep(1:3, each=33))
+
+Add the centers of the clusters to the plot
+
+        points(km$centers, pc=5, col="blue")

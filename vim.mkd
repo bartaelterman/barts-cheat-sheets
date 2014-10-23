@@ -47,3 +47,19 @@
 |`]z`|move to end of open fold|
 
 Thanks to [Vim tips: Folding fun](http://www.linux.com/learn/tutorials/442438-vim-tips-folding-fun)
+
+## Using tagbar
+
+I use the [tagbar plugin](http://majutsushi.github.io/tagbar/) to navigate through sections in a source code file. I installed the plugin and added `nmap <F8> :TagbarToggle<CR>` and `nmap <F9> :TagbarOpenAutoClose<CR>` to my `.vimrc`.
+
+|command|description|
+|-------|-----------|
+|`F8`   |open the tagbar if it's closed, close the tagbar if it's open|
+|`ctr`+`w` followed by `h`|jump to open tagbar window|
+|`F9`   |open the tagbar, and automatically close it after selecting a tag|
+|`enter`|when the cursor is positioned on a tag, `enter` will jump to the tag in the file|
+
+## Autocomplete
+
+|command|description|
+|`ctr`+`n`|opens a pane with suggested completions based on keywords in the file. Browse through these keywords with `ctr`+`n` and `ctr`+`p`|
