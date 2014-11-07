@@ -1,3 +1,5 @@
+# Mac terminal cheats
+
 |command|description|
 |-------|-----------|
 |`CTRL+a`|Move cursor to beginning of the line. (I think of this as anchoring my cursor to the start.)|
